@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+h1 {
+    color: #222;
+    margin: 25px;
+}
+.table {
+    display: grid;
+    grid-template-columns: repeat(18, 48px);
+    gap: 4px;
+    justify-content: center;
+    overflow-x: auto;
+}
+.box {
+    width: 44px;
+    height: 45px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+.empty {
+    visibility: hidden;
+}
+.alkali {
+    background-color: #ff9999;
+}
+.alkaline {
+    background-color: #ffcc99;
+}
+.metal {
+    background-color: #99ccff;
+}
+.metalloid {
+    background-color: #cc99ff;
+}
+.nonmetal {
+    background-color: #99e699;
+}
+.halogen {
+    background-color: #ffff99;
+}
+.noble {
+    background-color: #ffb3e6;
+}
+.lanthanide {
+    background-color: #99ffff;
+}
+.actinide {
+    background-color: #ffccff;
+}
+h3 {
+    margin-top: 25px;
+    color: #333;
+}
+.extra {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    justify-content: center;
+    margin: 10px auto;
+    max-width: 900px;
+}
+@media (max-width: 950px) {
+    .table {
+        justify-content: start;
+        width: 100%;
+        overflow-x: auto;
+    }
+}
